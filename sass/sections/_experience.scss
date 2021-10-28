@@ -1,0 +1,62 @@
+.experience{
+    .exp-data-row{
+        display: grid;
+        grid-template-columns: repeat(3,90px);
+        gap: 1rem;
+        width: 290px;
+        margin: auto;
+        span{
+            font-size: 1.2rem;
+            color: $main-color;
+            font-family: $title-font;
+        }
+        p{
+            margin-top: .5rem;
+            font-size: .85rem;
+            color: $text-color-light;
+        }
+        @include md{
+            span{
+                font-size: 1.6rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .exp-imgs{
+        margin-top: 1.5rem;
+        max-width: 1025px;
+        margin: 2rem auto;
+        position: relative;
+        .small{
+            max-width: 40%;
+            max-height: 100%;
+            position: absolute;
+            right: 0;
+            bottom: -1rem;
+            @include sm{
+                max-width: 30%;
+                
+            }
+            @include xl{
+                max-width: 25%;
+                right: 6rem;
+            }
+            @include xl{
+                right: 9rem;
+                bottom: -2rem;
+            }
+        }
+        .big{
+            max-width: 80%;
+            margin: auto;
+            @include lg{
+                max-width: 100%;
+                margin-left: 5rem;
+            }
+        }
+    }
+
+}
