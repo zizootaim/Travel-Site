@@ -1,0 +1,46 @@
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(23rem,1fr));
+    gap: 1.5rem;
+    @include custom(426px){
+        grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
+    }
+    &.container{
+        padding: 3rem 1rem;
+    }
+    &-text{
+        margin-bottom: 2rem;
+        text-align: center;
+        h1{
+            color: $main-color;
+        }
+        p{
+            margin: 1.3rem 0;
+            font-size: .9rem;
+            color: $text-color-light
+        }
+        
+        @include sm{
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.1rem;
+            }
+        }
+        @include lg{
+            text-align: left;
+            padding-top: 2rem;
+        }
+    }
+    &-imgs{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(120px,250px));
+        gap: 1.5rem;
+        margin: auto;
+        .small{
+            height: 80%;
+            margin: auto;
+        }
+    }
+}

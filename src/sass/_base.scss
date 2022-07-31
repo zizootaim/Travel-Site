@@ -1,0 +1,62 @@
+// Base
+.container{
+    width: 100%;
+    padding: 1rem;
+    @include md {
+        width: 80%;
+        margin: auto;
+        padding: 1rem 2rem;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1rem;
+    font-family: $body-font;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    transition: .3s;
+    &:not(.header-img):hover{
+        transform: scale(1.1);
+    }
+}
+.img-wrapper{
+    overflow: hidden;
+}
+.btn{
+    padding: .8rem 1.2rem;
+    color: #fff;
+    background-color: $main-color;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.title{
+    margin: 2rem;
+    h1{
+        text-align: center;
+        color: $main-color;
+        font-size: 1.4rem;
+        font-family: $title-font;
+    }
+}
+

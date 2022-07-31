@@ -1,0 +1,57 @@
+.footer{
+    margin-top: 4rem;
+    &-row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: 2rem;
+
+        .footer-col{
+            @include Flex(flex-start,flex-start,column);
+            h3{
+                color: $main-color;
+                font-size: 1.2rem;
+            }
+
+            .footer-icons{
+                .fab{
+                    color: $main-color;
+                    margin-right: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    p{
+        color: $text-color-light;
+        padding: 1rem 0 2rem;
+    }
+    .footer-link{
+        margin-top: 1rem;
+        color: $text-color-light;
+        &:hover{
+            color: $main-color;
+        }
+    }
+    &-bottom{
+        margin-top: 2rem;
+        @include Flex(space-between,center,column);
+        @include sm{
+            flex-direction: row;
+        }
+        p{
+            padding: 0;
+        }
+        .footer-links{
+            @include Flex(center,center,row);
+            margin-top: 1.5rem;
+            @include sm{
+                margin-top: 0;
+            }
+            a{
+                margin-top: 0;
+                margin-left: .5rem;
+            }
+        }
+    }
+}
+

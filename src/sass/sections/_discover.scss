@@ -1,0 +1,28 @@
+.discover{
+
+    .cards-container{
+        max-width: 700px;
+        div{
+            .card{
+                position: relative;
+                width: 200px;
+                padding-bottom: .5rem;
+                &-data{
+                    position: absolute;
+                    bottom: 1.5rem;
+                    left: 1.1rem;
+                    color: #fff;
+                    h2{
+                        font-size: 1.1rem;
+                        font-weight: 300;
+                    }
+                    span{
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
